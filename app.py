@@ -67,9 +67,9 @@ if st.button("Predict Final Grade (G3)"):
 
         # Load dataset for plotting
         if subject == "Math":
-            df = pd.read_csv("student/student-mat.csv", sep=";")
+            df = pd.read_csv("student-mat.csv", sep=";")
         else:
-            df = pd.read_csv("student/student-por.csv", sep=";")
+            df = pd.read_csv("student-por.csv", sep=";")
 
         fig = plt.figure(figsize=(8,6))
         ax = fig.add_subplot(111, projection='3d')
